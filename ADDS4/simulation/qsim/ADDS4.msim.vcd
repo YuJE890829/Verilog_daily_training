@@ -1,0 +1,372 @@
+$comment
+	File created using the following command:
+		vcd file ADDS4.msim.vcd -direction
+$end
+$date
+	Thu Mar 07 20:45:21 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module ADDS4_vlg_vec_tst $end
+$var reg 4 ! a [3:0] $end
+$var reg 4 " b [3:0] $end
+$var reg 1 # sel $end
+$var wire 1 $ cout $end
+$var wire 1 % over_flow $end
+$var wire 1 & s [3] $end
+$var wire 1 ' s [2] $end
+$var wire 1 ( s [1] $end
+$var wire 1 ) s [0] $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 cout~output_o $end
+$var wire 1 2 s[0]~output_o $end
+$var wire 1 3 s[1]~output_o $end
+$var wire 1 4 s[2]~output_o $end
+$var wire 1 5 s[3]~output_o $end
+$var wire 1 6 over_flow~output_o $end
+$var wire 1 7 a[3]~input_o $end
+$var wire 1 8 sel~input_o $end
+$var wire 1 9 b[3]~input_o $end
+$var wire 1 : b[0]~input_o $end
+$var wire 1 ; a[0]~input_o $end
+$var wire 1 < fd1|hd1|cout~combout $end
+$var wire 1 = fd1|hd2|cout~combout $end
+$var wire 1 > a[1]~input_o $end
+$var wire 1 ? b[1]~input_o $end
+$var wire 1 @ fd2|cout~0_combout $end
+$var wire 1 A b[2]~input_o $end
+$var wire 1 B a[2]~input_o $end
+$var wire 1 C fd3|cout~0_combout $end
+$var wire 1 D fd4|cout~0_combout $end
+$var wire 1 E fd1|hd2|sum~0_combout $end
+$var wire 1 F fd2|hd2|sum~combout $end
+$var wire 1 G fd3|hd2|sum~0_combout $end
+$var wire 1 H fd4|hd2|sum~0_combout $end
+$var wire 1 I comb~2_combout $end
+$var wire 1 J c1 [3] $end
+$var wire 1 K c1 [2] $end
+$var wire 1 L c1 [1] $end
+$var wire 1 M c1 [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+0#
+0$
+0%
+0)
+0(
+0'
+0&
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+zM
+0L
+zK
+zJ
+$end
+#20000
+1#
+18
+0*
+1L
+1=
+1H
+1G
+1@
+15
+14
+1&
+1'
+1C
+0G
+04
+0'
+0H
+1D
+05
+11
+0&
+1$
+#40000
+b1000 !
+b1000 "
+19
+17
+1*
+#60000
+0#
+08
+0*
+0C
+0L
+0=
+1H
+1G
+0@
+15
+14
+1&
+1'
+1I
+0H
+16
+05
+1%
+0&
+0G
+04
+0'
+#80000
+b1010 !
+b1010 "
+1?
+1>
+1*
+1L
+1F
+1@
+13
+1(
+0F
+03
+0(
+1G
+14
+1'
+#100000
+1#
+18
+0*
+1C
+0L
+1=
+0I
+1H
+0G
+0D
+06
+15
+04
+01
+0%
+1&
+0'
+0$
+0H
+1D
+05
+11
+0&
+1$
+#120000
+b1110 !
+b1111 !
+b1110 "
+b1111 "
+b111 !
+b111 "
+b101 !
+b101 "
+1:
+0?
+1A
+09
+1;
+0>
+1B
+07
+1*
+1L
+0@
+1F
+1@
+0C
+13
+1(
+0F
+1G
+1C
+03
+14
+0(
+1'
+0G
+1H
+0D
+04
+15
+01
+0'
+1&
+0$
+0H
+1D
+05
+11
+0&
+1$
+#140000
+0#
+08
+0*
+0L
+0=
+1<
+1I
+1H
+1G
+0D
+0@
+16
+15
+14
+01
+1%
+1&
+1'
+0$
+1F
+13
+1(
+0G
+04
+0'
+#160000
+b1101 !
+b1101 "
+b1111 !
+b1111 "
+1?
+19
+1>
+17
+1*
+1L
+1@
+0I
+1D
+0F
+06
+11
+03
+0%
+1$
+0(
+1F
+1G
+13
+14
+1(
+1'
+#180000
+1#
+18
+0*
+0L
+1=
+0<
+0H
+0G
+05
+04
+0&
+0'
+0F
+03
+0(
+#210000
+b1011 !
+b1010 !
+b1011 "
+b1010 "
+b10 !
+b10 "
+b0 !
+b0 "
+0#
+0:
+0?
+0A
+09
+0;
+0>
+0B
+07
+08
+1*
+0=
+0C
+0@
+1G
+1I
+1H
+0D
+1F
+14
+16
+15
+01
+13
+1'
+1%
+1&
+0$
+1(
+0F
+0I
+0H
+0G
+03
+06
+05
+04
+0(
+0%
+0&
+0'
+#1000000

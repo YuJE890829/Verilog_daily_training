@@ -1,0 +1,8 @@
+module full_adder(a, b, cin, cout, sum);
+	input a, b, cin;
+	wire c, s;
+	output cout, sum;
+	
+	half_adder hd1(a, b, c, s);
+	half_adder hd2(s, c, cout, sum);
+endmodule

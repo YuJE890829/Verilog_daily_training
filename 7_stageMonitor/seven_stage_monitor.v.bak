@@ -1,0 +1,40 @@
+module seven_stage_monitor(num, out);
+	input [3:0]num;
+	output [6:0]out;
+	
+	always@(num)
+	begin
+		if (num[3:0] == b'0000) //0
+			out[6:0] = b'0111111;
+		else if (num[3:0] == b'0001) //1
+			out[6:0] = b'0000110;
+		else if (num[3:0] == b'0010) //2
+			out[6:0] = b'1011011;
+		else if (num[3:0] == b'0011) //3
+			out[6:0] = b'1001111;
+		else if (num[3:0] == b'0100) //4
+			out[6:0] = b'1100110;
+		else if (num[3:0] == b'0101) //5
+			out[6:0] = b'1101101;
+		else if (num[3:0] == b'0110) //6
+			out[6:0] = b'1111101;
+		else if (num[3:0] == b'0111) //7
+			out[6:0] = b'0000111;
+		else if (num[3:0] == b'1000) //8
+			out[6:0] = b'1111111;
+		else if (num[3:0] == b'1001) //9
+			out[6:0] = b'1101111;
+		else if (num[3:0] == b'1010) //10
+			out[6:0] = b'1110111;
+		else if (num[3:0] == b'1011) //11
+			out[6:0] = b'1111100;
+		else if (num[3:0] == b'1100) //12
+			out[6:0] = b'0111001;
+		else if (num[3:0] == b'1101) //13
+			out[6:0] = b'1011110;
+		else if (num[3:0] == b'1110) //14
+			out[6:0] = b'1111001;
+		else if (num[3:0] == b'1111) //15
+			out[6:0] = b'1110001;
+	end
+endmodule

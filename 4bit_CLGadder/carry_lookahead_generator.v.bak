@@ -1,0 +1,8 @@
+module carry_lookahead_generator(a, b, cin, cout);
+	input [3:0]a;
+	input [3:0]b;
+	input cin;
+	output [3:0]cout;
+	
+	
+endmodule
