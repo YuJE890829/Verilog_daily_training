@@ -1,8 +1,0 @@
-module D_flipflop(d, clk, out);
-	input d, clk;
-	output out;
-	wire m_out;
-	
-	D_latch master(d, clk, m_out);
-	D_latch slave(m_out, !clk, out);
-endmodule
