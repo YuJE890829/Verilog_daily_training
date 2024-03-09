@@ -1,0 +1,24 @@
+# do 8to3_priority_encoder.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module priority_8bit_encoder
+# 
+# Top level modules:
+# 	priority_8bit_encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module priority_8bit_encoder_vlg_sample_tst
+# -- Compiling module priority_8bit_encoder_vlg_check_tst
+# -- Compiling module priority_8bit_encoder_vlg_vec_tst
+# 
+# Top level modules:
+# 	priority_8bit_encoder_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.priority_8bit_encoder_vlg_vec_tst 
+# Loading work.priority_8bit_encoder_vlg_vec_tst
+# Loading work.priority_8bit_encoder
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading work.priority_8bit_encoder_vlg_sample_tst
+# Loading work.priority_8bit_encoder_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(210)
+#    Time: 1 us  Iteration: 0  Instance: /priority_8bit_encoder_vlg_vec_tst/tb_out
