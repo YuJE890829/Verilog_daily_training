@@ -11,9 +11,9 @@ module ADDS4(a, b, sel, cout, s, over_flow);
 	xor(c1[1], sel, b[1]);
 	xor(c1[2], sel, b[2]);
 	xor(c1[3], sel, b[3]);
-	full_adder fd1(a[0], c1[0], sel, c2, s[0]);
-	full_adder fd2(a[1], c1[1], c2, c3, s[1]);
-	full_adder fd3(a[2], c1[2], c3, c4, s[2]);
-	full_adder fd4(a[3], c1[3], c4, cout, s[3]);
+	full_adder fd1(.a(a[0]), .b(c1[0]), .cin(sel), .cout(c2), .sum(s[0]));
+	full_adder fd2(.a(a[1]), .b(c1[1]), .cin(c2), .cout(c3), .sum(s[1]));
+	full_adder fd3(.a(a[2]), .b(c1[2]), .cin(c3), .cout(c4), .sum(s[2]));
+	full_adder fd4(.a(a[3]), .b(c1[3]), .cin(c4), .cout(cout), .sum(s[3]));
 	xor(over_flow, c4, cout); //If a and b are both negative numbers (the signed bit is 1), then c4 is 1 when no overflow occurs. If a and b are both positive numbers, c4 is 0 when no overflow occurs. So c4 and cout are the same when no overflow occur.
 endmodule

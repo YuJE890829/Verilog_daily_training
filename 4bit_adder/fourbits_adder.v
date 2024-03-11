@@ -6,8 +6,8 @@ module fourbits_adder(a, b, cin, cout, sum);
 	output cout;
 	wire c1, c2, c3;
 	
-	full_adder fd1(a[0], b[0], cin, c1, sum[0]);
-	full_adder fd2(a[1], b[1], c1, c2, sum[1]);
-	full_adder fd3(a[2], b[2], c2, c3, sum[2]);
-	full_adder fd4(a[3], b[3], c3, cout, sum[3]);
+	full_adder fd1(.a(a[0]), .b(b[0]), .cin(cin), .cout(c1), .sum(sum[0]));
+	full_adder fd2(.a(a[1]), .b(b[1]), .cin(c1), .cout(c2), .sum(sum[1]));
+	full_adder fd3(.a(a[2]), .b(b[2]), .cin(c2), .cout(c3), .sum(sum[2]));
+	full_adder fd4(.a(a[3]), .b(b[3]), .cin(c3), .cout(cout), .sum(sum[3]));
 endmodule

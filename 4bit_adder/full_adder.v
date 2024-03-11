@@ -3,7 +3,7 @@ module full_adder(a, b, cin, cout, sum);
 	wire c1, c2, s;
 	output cout, sum;
 	
-	half_adder hd1(a, b, c1, s);
-	half_adder hd2(s, cin, c2, sum);
+	half_adder hd1(.a(a), .b(b), .cout(c1), .sum(s));
+	half_adder hd2(.a(s), .b(cin), .cout(c2), .sum(sum));
 	or(cout, c1, c2);
 endmodule
